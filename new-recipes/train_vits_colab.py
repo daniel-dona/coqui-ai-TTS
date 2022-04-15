@@ -12,7 +12,7 @@ from TTS.utils.audio import AudioProcessor
 
 output_path = "/content/persistence/"
 dataset_config = BaseDatasetConfig(
-    name="ljspeech", meta_file_train="metadata.csv", path=os.path.join(output_path, "../LJSpeech-1.1/")
+    name="ljspeech", meta_file_train="metadata.csv", path="./LJSpeech-1.1/"
 )
 audio_config = BaseAudioConfig(
     sample_rate=22050,

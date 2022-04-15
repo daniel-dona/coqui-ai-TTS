@@ -13,4 +13,7 @@ shuf LJSpeech-1.1/metadata.csv > LJSpeech-1.1/metadata_shuf.csv
 head -n 12000 LJSpeech-1.1/metadata_shuf.csv > LJSpeech-1.1/metadata_train.csv
 tail -n 1100 LJSpeech-1.1/metadata_shuf.csv > LJSpeech-1.1/metadata_val.csv
 
+mv LJSpeech-1.1 /content/dataset/
+
+
 rm LJSpeech-1.1.tar.bz2

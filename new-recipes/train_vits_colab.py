@@ -11,8 +11,10 @@ from TTS.tts.utils.text.tokenizer import TTSTokenizer
 from TTS.utils.audio import AudioProcessor
 
 output_path = "/content/persistence/"
+dataset_path = "/content/dataset/"
+
 dataset_config = BaseDatasetConfig(
-    name="ljspeech", meta_file_train="metadata.csv", path="./LJSpeech-1.1/"
+    name="ljspeech", meta_file_train="metadata.csv", path=dataset_path
 )
 audio_config = BaseAudioConfig(
     sample_rate=22050,
@@ -34,7 +36,7 @@ audio_config = BaseAudioConfig(
 config = VitsConfig(
     audio=audio_config,
     run_name="vits_ljspeech",
-    batch_size=24,
+    batch_size=32,
     eval_batch_size=16,
     batch_group_size=5,
     num_loader_workers=0,

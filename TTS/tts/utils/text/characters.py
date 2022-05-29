@@ -20,15 +20,15 @@ _pad = "<PAD>"
 _eos = "<EOS>"
 _bos = "<BOS>"
 _blank = "<BLNK>"  # TODO: check if we need this alongside with PAD
-_characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-_punctuations = "!'(),-.:;? "
+_characters = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyzáéíóúüÁÉÍÓÚÜ"
+_punctuations = "¡!'(),-.:;?¿ "
 
 
 # DEFAULT SET OF IPA PHONEMES
 # Phonemes definition (All IPA characters)
 _vowels = "iyɨʉɯuɪʏʊeøɘəɵɤoɛœɜɞʌɔæɐaɶɑɒᵻ"
 _non_pulmonic_consonants = "ʘɓǀɗǃʄǂɠǁʛ"
-_pulmonic_consonants = "pbtdʈɖcɟkɡqɢʔɴŋɲɳnɱmʙrʀⱱɾɽɸβfvθðszʃʒʂʐçʝxɣχʁħʕhɦɬɮʋɹɻjɰlɭʎʟ"
+_pulmonic_consonants = "pbtdʈɖcɟkɡqɢʔɴŋɲɳnɱmʙrʀⱱɾɽɸβfvθðszʃʒʂʐçʝxɣχʁħʕhɦɬɮʋɹɻjɰlɭʎʟ͡"
 _suprasegmentals = "ˈˌːˑ"
 _other_symbols = "ʍwɥʜʢʡɕʑɺɧʲ"
 _diacrilics = "ɚ˞ɫ"

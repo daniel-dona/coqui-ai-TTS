@@ -49,6 +49,9 @@ def replace_symbols(text, lang="en"):
     text = text.replace(":", ",")
     if lang == "en":
         text = text.replace("&", " and ")
+    elif lang == "es":
+        text = text.replace("&", " y ")
+        text = text.replace("@", " arroba ")
     elif lang == "fr":
         text = text.replace("&", " et ")
     elif lang == "pt":
@@ -129,6 +132,14 @@ def portuguese_cleaners(text):
     text = collapse_whitespace(text)
     return text
 
+def spanish_cleaners(text):
+    """Basic pipeline for Portuguese text. There is no need to expand abbreviation and
+    numbers, phonemizer already does that"""
+    text = lowercase(text)
+    text = replace_symbols(text, lang="es")
+    text = remove_aux_symbols(text)
+    text = collapse_whitespace(text)
+    return text
 
 def chinese_mandarin_cleaners(text: str) -> str:
     """Basic pipeline for chinese"""

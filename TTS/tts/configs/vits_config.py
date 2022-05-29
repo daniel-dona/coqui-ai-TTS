@@ -127,11 +127,14 @@ class VitsConfig(BaseTTSConfig):
     # testing
     test_sentences: List[List] = field(
         default_factory=lambda: [
-            ["It took me quite a long time to develop a voice, and now that I have it I'm not going to be silent."],
-            ["Be a voice, not an echo."],
-            ["I'm sorry Dave. I'm afraid I can't do that."],
-            ["This cake is great. It's so delicious and moist."],
-            ["Prior to November 22, 1963."],
+            "El Viento del Norte y el Sol discutían por saber quién era el más fuerte de los dos",
+            "Mientras discutían, se acercó un viajero cubierto en un cálido abrigo",
+            "Entonces decidieron que el más fuerte sería quien lograse despojar al viajero de su abrigo",
+            "El Viento del Norte empezó, soplando tan fuerte como podía, pero entre más fuerte soplaba, el viajero más se arropaba",
+            "Entonces, el Viento desistió",
+            "Se llegó el turno del Sol, quien comenzó a brillar con fuerza",
+            "Esto hizo que el viajero sintiera calor y por ello se quitó su abrigo",
+            "Entonces el Viento del Norte tuvo que reconocer que el Sol era el más fuerte de los dos"
         ]
     )
 
